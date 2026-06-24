@@ -171,3 +171,17 @@ button.addEventListener("click", function (e) {
     }, 600);
 
 });
+
+const orbitContainer =
+document.querySelector('.orbit-container');
+
+document.addEventListener('mousemove',(e)=>{
+
+const x=(window.innerWidth/2-e.clientX)/70;
+
+const y=(window.innerHeight/2-e.clientY)/70;
+
+orbitContainer.style.transform=
+`translate(${x}px,${y}px)`;
+
+});
