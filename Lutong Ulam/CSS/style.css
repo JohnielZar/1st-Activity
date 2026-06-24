@@ -792,3 +792,160 @@ footer{
 }
 
 }
+
+.floating-ingredients{
+
+padding:150px 8%;
+
+}
+
+.floating-title{
+
+    text-align:center;
+    margin-bottom:100px;
+
+}
+
+.floating-title span{
+
+    letter-spacing:3px;
+    font-weight:700;
+    color:var(--accent);
+
+}
+
+.floating-title h2{
+
+    font-size:60px;
+    margin:20px 0;
+
+}
+
+.floating-title p{
+
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:var(--gray);
+
+}
+
+.floating-container{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:35px;
+
+}
+
+.float-card{
+
+    background:white;
+    padding:20px;
+    border-radius:30px;
+    box-shadow:var(--shadow);
+    transition:.3s ease;
+    cursor:pointer;
+
+}
+
+.float-card img{
+
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+
+}
+
+.float-card h3{
+
+    text-align:center;
+    margin-top:20px;
+    font-size:28px;
+
+}
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+.card1{
+
+animation:floating 4s infinite ease-in-out;
+
+}
+
+.card2{
+
+animation:floating 5s infinite ease-in-out;
+
+}
+
+.card3{
+
+animation:floating 6s infinite ease-in-out;
+
+}
+
+.card4{
+
+animation:floating 4.5s infinite ease-in-out;
+
+}
+
+.card5{
+
+animation:floating 5.5s infinite ease-in-out;
+
+}
+
+.card6{
+
+animation:floating 4.8s infinite ease-in-out;
+
+}
+
+.card7{
+
+animation:floating 6.2s infinite ease-in-out;
+
+}
+
+@media(max-width:1000px){
+
+.floating-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.floating-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
