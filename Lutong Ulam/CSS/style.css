@@ -562,16 +562,14 @@ footer p{
 .logo{
 
 flex-direction:column;
-
 text-align:center;
 
 }
 
 .logo img{
 
-width:55px;
-
-height:55px;
+width:100px;
+height:100px;
 
 }
 
