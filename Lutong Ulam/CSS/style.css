@@ -68,9 +68,46 @@ nav{
 
 .logo{
 
-    font-size:32px;
-    font-weight:800;
-    color:var(--primary);
+display:flex;
+align-items:center;
+gap:15px;
+
+}
+
+.logo img{
+
+width:65px;
+height:65px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.logo-text h2{
+
+font-size:28px;
+font-weight:800;
+color:var(--primary);
+line-height:1;
+
+}
+
+.logo-text span{
+
+font-size:12px;
+letter-spacing:2px;
+font-weight:600;
+color:var(--gray);
+text-transform:uppercase;
+
+}
+
+header.scrolled .logo-text h2,
+
+header.scrolled .logo-text span{
+
+color:white;
 
 }
 
@@ -522,64 +559,31 @@ footer p{
 
 /* RESPONSIVE */
 
-@media(max-width:1100px){
+.logo{
 
-.hero,
-.story,
-.chef{
+flex-direction:column;
 
-    grid-template-columns:1fr;
+text-align:center;
 
 }
 
-.hero{
+.logo img{
 
-    padding-top:180px;
+width:55px;
 
-}
-
-.hero-left{
-
-    text-align:center;
+height:55px;
 
 }
 
-.hero-left p{
+.logo-text h2{
 
-    margin:auto;
-
-}
-
-.hero-stats{
-
-    justify-content:center;
+font-size:22px;
 
 }
 
-.hero-left h1{
+.logo-text span{
 
-    font-size:70px;
-
-}
-
-.story h2,
-.chef h2{
-
-    font-size:50px;
-
-}
-
-.section-title h2{
-
-    font-size:45px;
-
-}
-
-.nutrition-grid{
-
-    grid-template-columns:repeat(2,1fr);
-
-}
+font-size:10px;
 
 }
 
