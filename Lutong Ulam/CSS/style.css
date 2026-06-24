@@ -61,8 +61,7 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:25px 8%;
+    padding:5px 8%;
 
 }
 
@@ -70,7 +69,7 @@ nav{
 
 display:flex;
 align-items:center;
-gap:15px;
+gap:5px;
 
 }
 
@@ -539,7 +538,7 @@ footer{
 
     background:var(--primary);
     color:white;
-    padding:100px;
+    padding:20px;
     text-align:center;
 
 }
